@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mahjabeen 🌙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+
+<style>
+body{
+background:#050505;
+font-family:Georgia, serif;
+color:white;
+overflow:hidden;
+text-align:center;
+padding:60px 20px;
+}
+
+.background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at top, rgba(100,0,50,0.25), transparent 35%),
+linear-gradient(to bottom,#000,#090909,#121212);
+z-index:-2;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.star{
+position:absolute;
+font-size:10px;
+color:white;
+animation:twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:0.2;}
+to{opacity:1;}
+}
+
+.moon{
+font-size:120px;
+filter:drop-shadow(0 0 20px rgba(255,255,255,0.45));
+}
+
+.card{
+max-width:850px;
+margin:40px auto;
+padding:50px 35px;
+background:rgba(255,255,255,0.05);
+border-radius:30px;
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+}
+
+h1{
+font-size:4rem;
+color:#ffd9ea;
+letter-spacing:4px;
+}
+
+.subtitle{
+opacity:0.8;
+margin-top:10px;
+letter-spacing:2px;
+}
+
+.message{
+font-size:1.18rem;
+line-height:2.2;
+}
+
+.urdu{
+margin-top:40px;
+font-family:'Noto Nastaliq Urdu', serif;
+font-size:1.7rem;
+line-height:2.6;
+color:#f5d6e6;
+}
+
+.footer{
+margin-top:40px;
+opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="dandelions_song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="background"></div>
+<div class="stars"></div>
+
+<div class="moon">🌙</div>
+
+<h1>HAPPY BIRTHDAY</h1>
+
+<p class="subtitle">to my beautiful Mahjabeen ✨</p>
+
+<div class="card">
+
+<p class="message">
+Happy Birthday to the most beautiful soul my heart has ever known ❤️<br><br>
+
+Naziya… your eyes carry a calmness softer than moonlight,  
+your hair flows like midnight poetry,  
+and your smile turns ordinary moments into magic 🌙✨<br><br>
+
+Until I found you,  
+I never knew someone could become my comfort, happiness, and peace all at once ❤️<br><br>
+
+Out of everyone in this universe,  
+my heart still chooses only one name…  
+<b>Mahjabeen 🌙</b>
+</p>
+
+<div class="urdu">
+چاند بھی شرما جائے تیرے چہرے کی روشنی دیکھ کر 🌙✨<br>
+تیری آنکھوں میں وہ سکون ہے، جیسے رات کی دعا ہو 💫<br>
+اس دنیا میں ہزاروں حسین ہوں گے مگر<br>
+میرا دل صرف اپنی ماہ جبین کا ہے ❤️
+</div>
+
+</div>
+
+<div class="footer">
+made with love for Mahjabeen 🌙
+</div>
+
+<script>
+for(let i=0;i<140;i++){
+const star=document.createElement('div');
+star.classList.add('star');
+star.innerHTML='✦';
+star.style.left=Math.random()*100+'vw';
+star.style.top=Math.random()*100+'vh';
+star.style.animationDuration=(Math.random()*4+2)+'s';
+document.querySelector('.stars').appendChild(star);
+}
+</script>
+
+</body>
+</html>
